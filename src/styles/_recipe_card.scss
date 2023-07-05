@@ -1,0 +1,54 @@
+.recipe__card{
+	background: white;
+	@include adaptiv-value("border-radius", 20, 10, 0);
+
+	.main__img{
+		@include adaptiv-value("border-top-left-radius", 20, 10, 0);
+		@include adaptiv-value("border-top-right-radius", 20, 10, 0);
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		aspect-ratio: 458/263;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		filter: brightness(50%);
+	}
+
+	.img__title{
+		@include adaptiv-value("height", 90, 35, 0);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		justify-content: baseline;
+		@include adaptiv-value("margin-left", 8, 6, 0);
+		@include adaptiv-value("margin-right", 8, 6, 0);
+		@include adaptiv-value("font-size", 23, 11, 0);
+		@include adaptiv-value("line-height", 27, 11, 0);
+		margin-top: 5px;
+		font-weight: 600;
+		color: $main_color;
+		@media (max-width: 410px){
+			@include adaptiv-value("font-size", 23, 12, 0);
+		}
+
+		.description{
+			@include adaptiv-value("font-size", 16, 8, 0);
+			@include adaptiv-value("line-height", 25, 7, 0);
+			@include adaptiv-value("padding-bottom", 30, 12, 0);
+
+			@media (max-width: 700px){
+				font-size:9px;
+			}
+		}
+
+
+		.diff{
+			@include adaptiv-value("font-size", 16, 8, 0);
+			padding-top: 2px;
+			padding-bottom: 15px;
+		}
+
+	}
+
+
+}

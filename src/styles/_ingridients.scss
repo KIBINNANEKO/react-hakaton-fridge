@@ -1,0 +1,45 @@
+.ingridients__page{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 40px;
+	position: relative;
+
+	.page__tabs{
+		@include adaptiv-value("margin-right", 50, 20, 0);
+		flex: 0 1 25%;
+	}
+
+	.page__ingridients{
+		@include adaptiv-value("gap", 18, 10, 0);
+		flex: 0 1 77%;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		align-content: space-between;
+
+		@media (max-width: 780px){
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@media (max-width: 480px){
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.tabs__button{
+		@include adaptiv-value("border-radius", 20, 10, 0);
+		@include adaptiv-value("font-size", 16, 10, 0);
+		@include adaptiv-value("padding-top", 14, 8, 0);
+		@include adaptiv-value("padding-bottom", 14, 8, 0);
+		background: none;
+		margin-top: 15px;
+		color: white;
+		width: 100%;
+		font-weight: 600;
+		border: 3px solid #FFFFFF;
+		transition: 0.4s;
+
+		&:hover{
+			background: #5C4F38;
+		}
+
+	}
+}

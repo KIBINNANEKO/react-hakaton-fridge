@@ -1,0 +1,11 @@
+.page__home{
+	display: grid;
+	margin-bottom: 30px;
+	@include adaptiv-value("gap", 25, 10, 0);
+	grid-template-columns: repeat(2, 1fr);
+
+	@media (max-width: 700px){
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+}

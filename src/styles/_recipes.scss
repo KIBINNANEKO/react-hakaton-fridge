@@ -1,0 +1,97 @@
+.recipes__block{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	@include adaptiv-value("margin-top", 25, 15, 0);
+	@include adaptiv-value("margin-bottom", 25, 15, 0);
+
+	.recipes__title{
+		font-weight: 800;
+		@include adaptiv-value("font-size", 50, 25, 0);
+		line-height: 61px;
+		color: #FFFFFF;
+		@media (max-width: 600px){
+			display: none;
+		}
+	}
+
+	.button__block{
+		display: flex;
+		@include adaptiv-value("gap", 15, 10, 0);
+		font-weight: 600;
+		margin-right: 8px;
+		*{
+			@include adaptiv-value("font-size", 16, 10, 0);
+			@include adaptiv-value("padding-top", 6, 4, 0);
+			@include adaptiv-value("padding-bottom", 6, 4, 0);
+			@include adaptiv-value("padding-left", 15, 6, 0);
+			@include adaptiv-value("padding-right", 15, 6, 0);
+		}
+		
+
+		.button__all{
+			font-weight: 600;
+			background: white;
+			color: $main_color;
+			border-radius: 20px;
+		}
+
+		.button__my{
+			background: none;
+			color: white;
+			border-radius: 20px;
+			border: 3px white solid;
+		}
+
+		.button__diff{
+			background: none;
+			color: white;
+			border-radius: 20px;
+			border: 3px white solid;
+		}
+	}
+
+	.input__block{
+		input{
+			font-weight: 500;
+			border-radius: 20px;
+			@include adaptiv-value("font-size", 16, 10, 0);
+			@include adaptiv-value("padding-top", 7, 10, 1);
+			@include adaptiv-value("padding-bottom", 7, 10, 1);
+			@include adaptiv-value("padding-left", 15, 10, 0);
+			@include adaptiv-value("padding-right", 15, 5, 0);
+
+			@media (max-width: 451px){
+				margin-top: 15px;
+			}
+		}
+	}
+
+}
+
+
+.page__recipes{
+	display: grid;
+	margin-bottom: 30px;
+	@include adaptiv-value("gap", 25, 10, 0);
+	grid-template-columns: repeat(3, 1fr);
+
+	@media (max-width: 700px){
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media (max-width: 410px){
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+}
+
+.noRecipes{  
+	z-index: 12;
+	color: white;
+	@include adaptiv-value("font-size", 18, 10, 0);
+   top: 50%;
+   left: 50%;
+   margin: -25px 0 0 -25px;
+}

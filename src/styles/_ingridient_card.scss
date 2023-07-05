@@ -1,0 +1,47 @@
+.ingridient__card{
+	font-size: 16px;
+	@include adaptiv-value("border-radius", 20, 10, 0);
+	background-color: white;
+
+	.card__img{
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+
+	.main__img{
+		@include adaptiv-value("border-top-left-radius", 20, 10, 0);
+		@include adaptiv-value("border-top-right-radius", 20, 10, 0);
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		aspect-ratio: 190/178;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		filter: brightness(50%);
+	}
+
+	.img__title{
+		position: absolute;
+		@include adaptiv-value("max-width", 180, 55, 0);
+		top: 45%;
+		font-weight: 600;
+		@include adaptiv-value("font-size", 16, 8, 0);
+		@include adaptiv-value("line-height", 25, 8, 0);
+		color: #FFFFFF;
+		text-align: center;
+	}
+
+	.card__block{
+		@include adaptiv-value("font-size", 16, 9, 0);
+		display: flex;
+		justify-content: space-between;
+		margin: 8px 20px;
+		@include adaptiv-value("margin-left", 20, 10, 0);
+		@include adaptiv-value("margin-right", 20, 10, 0);
+	}
+
+	.category{
+		@include adaptiv-value("font-size", 16, 9, 0);
+	}
+}

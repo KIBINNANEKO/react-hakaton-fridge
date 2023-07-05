@@ -1,0 +1,40 @@
+.tabs__item{
+	@include adaptiv-value("padding-top", 10, 5, 0);
+	@include adaptiv-value("padding-bottom", 10, 5, 0);
+	@include adaptiv-value("padding-left", 25, 7, 0);
+	@include adaptiv-value("padding-right", 25, 15, 0);
+	@include adaptiv-value("font-size", 20, 10, 0);
+	@include adaptiv-value("line-height", 24, 14, 0);
+	color: black;
+	background-color: white;
+	text-align: left;
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.3s;
+	transition-delay: 0.05s;
+
+	&:hover{
+		background-color: #5C4F38;
+		color: white;
+	}
+
+	&:not(:last-child){
+		border-bottom: 1px solid $main_color;
+	}
+
+	&:last-child{
+		@include adaptiv-value("border-bottom-left-radius", 20, 10, 0);
+		@include adaptiv-value("border-bottom-right-radius", 20, 10, 0);
+	}
+
+	&:first-child{
+		@include adaptiv-value("border-top-left-radius", 20, 10, 0);
+		@include adaptiv-value("border-top-right-radius", 20, 10, 0);
+	}
+
+}
+
+.tabs__active{
+	background-color: #5C4F38;
+	color: white;
+}
