@@ -1,5 +1,9 @@
 INT20H 2023 Test Task
 
+Demonstration:
+
+![Gif](https://github.com/KIBINNANEKO/react-hakaton-fridge/blob/main/src/assets/demonstration.gif)
+
 Disclaimer:
 The hackathon took place on February 1, 2023. In this hackathon, I was a frontend developer in a team consisting of two .NET backend developers and a designer. Only my code is presented here, which may not be very polished due to the limited time for completing the task.
 
@@ -14,7 +18,3 @@ Functional requirements for the application:
 - Ability to view all the ingredients available to the user.
 - Ability to view a categorized list of available products (dairy products, vegetables, fruits, etc.).
 - Ability to view dishes that can be prepared with the available ingredients.
-
-Demonstration:
-
-![Gif](https://github.com/KIBINNANEKO/react-hakaton-fridge/blob/main/src/assets/demonstration.gif)
