@@ -1,6 +1,6 @@
 INT20H 2023 Test Task
 
-Demonstration:
+## Demonstration:
 
 ![Gif](https://github.com/KIBINNANEKO/react-hakaton-fridge/blob/main/src/assets/demonstration.gif)
 
