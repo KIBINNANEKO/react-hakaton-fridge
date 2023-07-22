@@ -14,8 +14,8 @@ Sometimes we all crave something delicious, but our fridge is empty. To avoid su
 
 Functional requirements for the application:
 
-- Ability to view the set and quantity of ingredients needed to cook the selected dish.
-- Ability to view the recipe for the selected dish.
-- Ability to view all the ingredients available to the user.
-- Ability to view a categorized list of available products (dairy products, vegetables, fruits, etc.).
-- Ability to view dishes that can be prepared with the available ingredients.
+- Ability to view the set and quantity of ingredients needed to cook the selected dish ✓
+- Ability to view the recipe for the selected dish ✓
+- Ability to view all the ingredients available to the user ✓
+- Ability to view a categorized list of available products (dairy products, vegetables, fruits, etc.) ✓
+- Ability to view dishes that can be prepared with the available ingredients ✓
